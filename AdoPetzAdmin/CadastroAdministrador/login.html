@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <title>Resultado</title>
+    <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    
+        <img id="logo" src="Images/Adopt 500x500.png" alt="Logo da Empresa">
+   
+   <body>
+    <!-- Logo no topo -->
+    <img id="logo" src="Images/Adopt 500x500.png" alt="Logo da Empresa">
+
+    <!-- Formulário centralizado -->
+    <form id="login-form" action="../jsp/testlogin.jsp" method="post">
+        <div class="container">
+            <div class="login">
+                <h1>Login</h1>
+                <p>Bem Vindo.</p>
+                <input type="email" id="email" name="email" placeholder="E-mail" required>
+                <input type="password" id="senha" name="senha" placeholder="Senha" required>
+            </div>
+            <input class="inputSubmit" type="submit" value="Entrar">
+        </div>
+    </form>
+</body>
+
+
+    <!-- Pop-up de erro -->
+    <div id="error-popup" class="popup">
+        <div class="popup-content">
+            <span id="close-popup" class="close">&times;</span>
+            <p id="error-message"></p>
+        </div>
+    </div>
+
+    <script src="js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body, html {
+    background-color: #f4f4f9;
+    height: 100%;
+}
+
+/* Header Estilizado */
+header {
+    width: 100%;
+    background-color: #0011a8; /* Cor de fundo azul */
+    color: #ffffff; /* Cor do texto branco */
+    padding: 20px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header .header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Organiza logo e texto em coluna */
+}
+
+#logo {
+    width: 120px; /* Tamanho ajustado da logo */
+    margin-bottom: 10px; /* Espaçamento entre logo e texto */
+}
+
+header h1 {
+    font-size: 1.8rem; /* Tamanho do texto do título */
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+/* Container Principal */
+.container {
+    position: relative;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    width: 80%;
+    max-width: 900px;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.container h1 {
+    color: #0011a8;
+    margin-bottom: 20px;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+}
+
+.container h2 {
+    color: #0011a8;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #0011a8;
+    display: inline-block;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+/* Botões */
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.button-container .button {
+    display: block;
+    font-size: 1rem;
+    line-height: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 45%; /* Botões menores para dividir espaço */
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    background-color: #2e43fa;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 5px 15px rgba(46, 67, 250, 0.4);
+}
+
+.button-container .button:hover,
+.button-container .button:focus {
+    background-color: #0011a8;
+    box-shadow: 0 8px 20px rgba(0, 17, 168, 0.5);
+    transform: translateY(-3px);
+}
+
+/* Link Finalizar Sessão */
+.back-link {
+    display: block;
+    font-size: 1rem;
+    line-height: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 80%;
+    max-width: 300px;
+    margin: 20px auto;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    background-color: #ff4d4d;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 5px 15px rgba(255, 77, 77, 0.4);
+}
+
+.back-link:hover,
+.back-link:focus {
+    background-color: #d11a2a;
+    box-shadow: 0 8px 20px rgba(209, 26, 42, 0.5);
+    transform: translateY(-3px);
+}

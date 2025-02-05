@@ -1,0 +1,124 @@
+/* Reset CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Header CSS */
+header {
+    background-color: #0011a8; /* Cor azul do dashboard */
+    color: #ffffff;
+    padding: 15px 20px; /* Espaçamento interno */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Fixado no topo */
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espaçamento entre o logo e o texto */
+}
+
+header .logo img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+header .logo span {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+header nav {
+    display: flex;
+    gap: 15px; /* Espaçamento entre os links */
+}
+
+header nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #2e43fa; /* Cor azul clara ao passar o mouse */
+}
+
+header .user-actions {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+header .user-actions button {
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+header .user-actions button:hover {
+    background-color: #ffffff;
+    color: #0011a8;
+}
+
+/* Adicionando espaço abaixo do header */
+body {
+    padding-top: 70px; /* Altura do header */
+}

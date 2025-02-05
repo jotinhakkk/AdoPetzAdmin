@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif; /* Alterei para 'sans-serif' para uma aparência mais limpa */
+}
+
+body, html {
+    background-color: #0011a8; /* Azul escuro como fundo */
+    height: 100%;
+}
+
+/* Logo centralizada no topo */
+#logo {
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    width: 100px;
+    height: auto;
+}
+
+/* Container principal */
+.container {
+    position: relative;
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3); /* Sombra mais suave */
+    background-color: #ffffff; /* Fundo branco para contraste */
+    width: 400px;
+    padding: 25px; /* Aumentei o padding para melhor espaçamento */
+    border-radius: 10px; /* Cantos mais arredondados */
+    text-align: center;
+}
+
+/* Título principal */
+.container h1 {
+    color: #2e43fa; /* Azul vibrante */
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+    font-weight: 900;
+    letter-spacing: 1.2px;
+}
+
+/* Labels */
+.container label {
+    display: block;
+    margin-bottom: 10px;
+    color: #2e43fa;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+/* Input de email */
+.container input[type="email"] {
+    background-color: #ffffff;
+    width: 100%;
+    height: 45px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border-radius: 6px;
+    border: 1px solid #cccccc;
+    padding: 10px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.container input[type="email"]:focus {
+    border-color: #2e43fa;
+    outline: none;
+}
+
+/* Botão de envio */
+.container input[type="submit"] {
+    font-size: 1rem;
+    line-height: 2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    background: transparent;
+    color: #2e43fa;
+    border: 2px solid currentColor;
+    border-radius: 6px;
+    margin-top: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.container input[type="submit"]:hover,
+.container input[type="submit"]:focus {
+    color: #ffffff;
+    background-color: #2e43fa;
+    border-color: #2e43fa;
+}
+
+/* Link com aparência de botão */
+.container a.button {
+    display: block;
+    margin-top: 20px;
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    background: transparent;
+    color: #2e43fa;
+    border: 2px solid currentColor;
+    border-radius: 6px;
+    padding: 0.75rem 1.5rem;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.container a.button:hover,
+.container a.button:focus {
+    color: #ffffff;
+    background-color: #2e43fa;
+    border-color: #2e43fa;
+}
+
+/* Mensagem de resultado */
+.result-message {
+    font-size: 1.25rem;
+    color: #2e43fa;
+    margin-top: 20px;
+    text-align: center;
+}
