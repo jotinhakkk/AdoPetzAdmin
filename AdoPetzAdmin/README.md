@@ -1,35 +1,24 @@
-Estrutura para o funcionamento do banco de dados.
+AdoPetzAdmin é um sistema administrativo desenvolvido em JSP para gerenciar uma plataforma empresarial, permitindo a administração de usuários, anúncios e moderação de conteúdo. O sistema oferece funcionalidades completas de CRUD (Create, Read, Update, Delete), além de recursos avançados para controle e segurança.
 
+Funcionalidades
 
-create database meu_banco;
-use meu_banco;
+Gerenciamento de Usuários: Cadastro, edição e remoção de administradores e usuários.
+Controle de Anúncios: Exclusão e gerenciamento de anúncios na plataforma.
+Moderação e Segurança: Sistema de banimento para usuários que violarem as regras.
+Hierarquia Administrativa:
+Super Administrador: Controle total sobre o sistema, incluindo a gestão de outros administradores.
+Administrador Comum: Permissões restritas à gestão de anúncios e usuários.
 
-CREATE TABLE administrador (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    email VARCHAR(255) NOT NULL,
-    senha VARCHAR(255) NOT NULL
-);
-INSERT INTO administrador (email, senha) VALUES ('exemplo@dominio.com', 'senha123');
+Tecnologias Utilizadas
 
-CREATE TABLE pessoafisica (
-    cpf VARCHAR(14) PRIMARY KEY,
-    nome VARCHAR(255) NOT NULL,
-    email VARCHAR(255) NOT NULL UNIQUE,
-    cep VARCHAR(9) NOT NULL,
-    telefone VARCHAR(20) NOT NULL,
-    senha VARCHAR(255) NOT NULL,
-    datanasc DATE NOT NULL,
-    estado VARCHAR(2) NOT NULL,
-    genero VARCHAR(20) NOT NULL
-);
-CREATE TABLE pessoajuridica (
-    cnpj VARCHAR(18) PRIMARY KEY,
-    nome VARCHAR(255) NOT NULL,
-    email VARCHAR(255) NOT NULL UNIQUE,
-    cep VARCHAR(9) NOT NULL,
-    telefone VARCHAR(20) NOT NULL,
-    senha VARCHAR(255) NOT NULL,
-    estado VARCHAR(2) NOT NULL
-);
+Backend: JSP + Servlets
+Banco de Dados: MySQL
+Servidor de Aplicação: Apache Tomcat
+Frontend: HTML, CSS (com Outfit do Google Fonts)
 
-select * from pessoafisica;
+Como Executar
+
+Configurar um servidor Apache Tomcat.
+Importar o banco de dados MySQL a partir do script SQL fornecido.
+Configurar as credenciais do banco no projeto.
+Executar o projeto no navegador através do Tomcat.
